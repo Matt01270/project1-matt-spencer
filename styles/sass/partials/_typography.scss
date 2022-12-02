@@ -1,0 +1,75 @@
+@use './variables'; 
+
+html { 
+    font-size: 125%;
+} 
+
+.center-text { 
+    text-align: center;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5 { 
+    font-family: variables.$heading-font; 
+    text-transform: uppercase;
+} 
+
+nav { 
+    font-family: variables.$heading-font;  
+    ul { 
+        list-style: none; 
+        li a { 
+            font-size: 0.8rem;
+            color: black; 
+            text-decoration: none; 
+            text-transform: uppercase; 
+            font-weight: 600;
+        }
+    }
+} 
+
+nav span { 
+    text-decoration: line-through;
+}
+
+p { 
+    font-family: variables.$body-font; 
+    font-size: 0.8rem;
+} 
+
+.branding { 
+    h3 { 
+        font-weight: 500; 
+        letter-spacing: 0.4px; 
+        font-size: 1rem;
+    } 
+
+    p {  
+        font-size: 0.7rem;
+        font-weight: 500; 
+    }
+}
+
+.team h2 { 
+    font-weight: 400;
+}  
+
+.team h4{ 
+    font-weight: 400; 
+    letter-spacing: 0.3em;
+}
+
+.icons h3 { 
+    font-weight: 400;
+}  
+
+.slide-section { 
+    p { 
+        font-style: italic; 
+        color: grey;
+        line-height: 2em; 
+        font-weight: 600;
+    }
+}
