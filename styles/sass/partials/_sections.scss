@@ -1,3 +1,213 @@
-@use 'header.scss';
-@use 'nav.scss'; 
-@use 'branding.scss';
+ @use './variables';
+ /* Branding section */
+ .branding {
+     background-color: variables.$light-sage;
+     padding-top: 220px;
+
+     .branding__image {
+         width: 469px;
+         height: 268px;
+         position: relative;
+         margin: auto;
+     }
+
+     .circle-text {
+         position: absolute;
+         top: -92px;
+         left: -105px;
+     }
+
+     .line {
+         position: absolute;
+         height: 150px;
+         width: 1px;
+         border: 1px solid rgba(128, 128, 128, 0.29);
+         top: -300px;
+         left: 250px;
+     }
+
+     .text-section {
+         display: flex;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 50px 10px 100px 10px;
+         line-height: 1.2em;
+         max-width: 900px;
+
+         div {
+             margin: 20px;
+         }
+     }
+ }
+ /* slide section */
+ .slide { 
+     display: flex;
+     justify-content: space-between;
+     margin-top: 150px;
+
+     img {
+         border-radius: 50%;
+         width: 20%;
+     }
+
+     button {
+         background: transparent;
+         border: none;
+         margin-top: 150px;
+
+         &:hover {
+             opacity: 0.5;
+         }
+     }
+
+     .fa-chevron-right {
+         opacity: 0.5;
+     }
+ }
+
+ .slide-section p {
+     width: 70%;
+     margin: 40px auto 150px auto;
+ }
+ /* icons section */
+ .icons {
+     background-image: url(../../../../assets/home-4.jpeg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 100%;
+     overflow-x: hidden;
+     min-height: 800px;
+
+     .category-container {
+         display: flex;
+         flex-wrap: wrap;
+         padding: 200px 0;
+         margin-left: 50%;
+         max-width: 950px;
+
+
+         .category {
+             flex: 1 1 300px;
+             display: flex;
+             margin: 25px 10px;
+
+             .category__icon {
+                 margin-top: 20px;
+                 margin-right: 50px;
+
+                 i {
+                     border: 2px solid black;
+                     padding: 15px;
+                     border-radius: 50%;
+                     font-size: 1.5rem;
+                 }
+             }
+
+             .category__text p {
+                 font-size: 0.65rem;
+                 color: rgb(156, 156, 156);
+                 width: 75%;
+
+
+             }
+         }
+     }
+ } 
+
+/* team section  */ 
+.team { 
+    padding-top: 100px; 
+    overflow-x: hidden;
+    
+    h2 { 
+        text-align: center;
+    }
+}
+
+
+.team-gallery { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1.5em; 
+    margin-top: 100px; 
+    margin-bottom: 200px;  
+    position: relative;
+
+        .line {
+                position: absolute;
+                height: 90px;
+                width: 1px;
+                border: 1px solid rgb(128, 128, 128, 0.29);
+                top: -260px;
+                left: 600px;
+            } 
+
+        .text-section { 
+            width: 570px; 
+            background-color: variables.$white-two; 
+            padding-top: 90px; 
+            padding-left: 50px;
+            padding-right: 50px; 
+
+            h4 { 
+                padding: 0;
+            }
+    } 
+        h4 { 
+            width: 270px; 
+            padding: 25% 40px; 
+    }
+    } 
+/* portfolio section */
+
+.portfolio { 
+    height: 100vh; 
+    width: 100%; 
+    display: flex;
+} 
+
+.green-background { 
+    background-color: variables.$light-sage;
+    width: 50%; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+
+    .text-section { 
+        text-align: center; 
+        width: 50%; 
+        margin: 0 auto; 
+
+        h2 { 
+            margin-bottom: 60px;
+        } 
+
+        p { 
+            margin-bottom: 60px;
+        } 
+
+        button { 
+            background-color: variables.$white; 
+            border: none; 
+            padding: 25px 30px; 
+
+            &:hover { 
+                opacity: 0.7;
+            }
+        }
+    } 
+
+}
+
+.portfolio-background { 
+    width: 50%;
+    background-image: url('../../../assets/home-10.jpeg'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+    
+ 
+

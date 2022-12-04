@@ -263,6 +263,13 @@ nav span {
   text-decoration: line-through;
 }
 
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
@@ -278,17 +285,40 @@ p {
   font-weight: 600;
 }
 
+.icons .category h3 {
+  font-size: 0.9rem;
+}
+
 .team h2 {
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .team h4 {
-  font-weight: 400;
-  letter-spacing: 0.3em;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+}
+
+.text-section h4 {
+  letter-spacing: 0.2em;
+}
+
+.team p {
+  line-height: 1.8em;
+  font-size: 0.7rem;
+  color: grey;
 }
 
 .icons h3 {
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.icons p {
+  font-size: 0.65rem;
+  line-height: 1.5em;
+  font-weight: 500;
 }
 
 .slide-section p {
@@ -298,7 +328,26 @@ p {
   font-weight: 600;
 }
 
+.portfolio h2 {
+  font-weight: 500;
+}
+
+.portfolio p {
+  line-height: 1.8em;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
+  width: 70%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -337,6 +386,7 @@ div ul li {
   padding: 1em;
 }
 
+/* Branding section */
 .branding {
   background-color: #c3dab7;
   padding-top: 220px;
@@ -372,4 +422,174 @@ div ul li {
 }
 .branding .text-section div {
   margin: 20px;
+}
+
+/* slide section */
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 150px;
+}
+.slide img {
+  border-radius: 50%;
+  width: 20%;
+}
+.slide button {
+  background: transparent;
+  border: none;
+  margin-top: 150px;
+}
+.slide button:hover {
+  opacity: 0.5;
+}
+.slide .fa-chevron-right {
+  opacity: 0.5;
+}
+
+.slide-section p {
+  width: 70%;
+  margin: 40px auto 150px auto;
+}
+
+/* icons section */
+.icons {
+  background-image: url(../../../../assets/home-4.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 800px;
+}
+.icons .category-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 200px 0;
+  margin-left: 50%;
+  max-width: 950px;
+}
+.icons .category-container .category {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 10px;
+}
+.icons .category-container .category .category__icon {
+  margin-top: 20px;
+  margin-right: 50px;
+}
+.icons .category-container .category .category__icon i {
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.icons .category-container .category .category__text p {
+  font-size: 0.65rem;
+  color: rgb(156, 156, 156);
+  width: 75%;
+}
+
+/* team section  */
+.team {
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+.team h2 {
+  text-align: center;
+}
+
+.team-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5em;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  position: relative;
+}
+.team-gallery .line {
+  position: absolute;
+  height: 90px;
+  width: 1px;
+  border: 1px solid rgba(128, 128, 128, 0.29);
+  top: -260px;
+  left: 600px;
+}
+.team-gallery .text-section {
+  width: 570px;
+  background-color: #F6F6F6;
+  padding-top: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.team-gallery .text-section h4 {
+  padding: 0;
+}
+.team-gallery h4 {
+  width: 270px;
+  padding: 25% 40px;
+}
+
+/* portfolio section */
+.portfolio {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.green-background {
+  background-color: #c3dab7;
+  width: 50%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.green-background .text-section {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.green-background .text-section h2 {
+  margin-bottom: 60px;
+}
+.green-background .text-section p {
+  margin-bottom: 60px;
+}
+.green-background .text-section button {
+  background-color: #ffffff;
+  border: none;
+  padding: 25px 30px;
+}
+.green-background .text-section button:hover {
+  opacity: 0.7;
+}
+
+.portfolio-background {
+  width: 50%;
+  background-image: url("../../../assets/home-10.jpeg");
+  background-size: cover;
+  background-position: center;
 }

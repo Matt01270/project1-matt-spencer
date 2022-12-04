@@ -1,0 +1,22 @@
+.home-header {
+    background-image: url(../../../assets/home-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+} 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+div ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    li {
+        padding: 1em
+    }
+}
+
