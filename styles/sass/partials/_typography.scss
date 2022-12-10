@@ -26,7 +26,7 @@ nav {
             text-decoration: none; 
             text-transform: uppercase; 
             font-weight: 600;
-        }
+        } 
     }
 } 
 
@@ -63,26 +63,29 @@ p {
    font-size: 0.9rem;
 }
 
-.team h2 { 
-    font-weight: 500; 
-    font-size: 1.2rem;
-}  
+.team { 
+    h2 { 
+        font-weight: 500; 
+        font-size: 1.2rem;
+    }  
 
-.team h4{ 
-    font-weight: 500; 
-    font-size: 0.9rem; 
-    line-height: 1.2em; 
-    letter-spacing: 0.1em;
-} 
+    h4 { 
+        font-weight: 500; 
+        font-size: 0.9rem; 
+        line-height: 1.2em; 
+        letter-spacing: 0.1em;
+    } 
 
-.text-section h4 { 
-    letter-spacing: 0.2em;
-}
+    .text-section h4 { 
+        letter-spacing: 0.2em;
+    } 
 
-.team p { 
-    line-height: 1.8em; 
-    font-size: 0.7rem; 
-    color: grey;
+    p { 
+        line-height: 1.8em; 
+        font-size: 0.7rem; 
+        color: variables.$grey;
+    }
+
 }
 
 .icons { 
@@ -101,18 +104,230 @@ p {
 .slide-section { 
     p { 
         font-style: italic; 
-        color: grey;
+        color: variables.$grey;
         line-height: 2em; 
         font-weight: 600;
     }
 } 
 
-.portfolio h2 {     
-    font-weight: 500;
+.portfolio{ 
+    h2 {     
+        font-weight: 500;
+    } 
+
+    p { 
+        line-height: 1.8em; 
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+    } 
 } 
 
-.portfolio p { 
-    line-height: 1.8em; 
-    color: rgba(0, 0, 0, 0.5);
+.contact-us { 
     font-weight: 500;
+    line-height: 1.2em; 
+
+    h3 { 
+        font-weight: 400; 
+        font-size: 0.9rem;
+    } 
+
+    p, .recent-posts  { 
+        font-size: 0.7rem;
+    }
+
+    ul li { 
+        font-family: variables.$body-font; 
+        line-height: 2.1em;
+    } 
+
+    .sign-up { 
+        text-align: right;
+    }
+} 
+
+/* BLOG PAGE*/ 
+.creative-agency { 
+ h2 { 
+    font-size: 3rem;
+} 
+
+a { 
+    color: variables.$grey;
+    text-decoration: none; 
+    &:hover, 
+    &:focus { 
+        color: black;
+    }
+} 
+
+span { 
+    color: black; 
+    font-weight: 600;
+} 
+
+ h5 { 
+    font-weight: 600; 
+} 
+
+.blog-info p { 
+    font-size: 0.65rem; 
+    font-weight: 600; 
+    color: variables.$grey;
+}
+
+.text-section { 
+    color: variables.$grey;
+    font-size: 700; 
+   
+    p { 
+        font-size: 0.65rem; 
+        line-height: 1.7em; 
+        font-weight: 500
+    }
+
+    span { 
+    color: black; 
+    font-weight: bolder; 
+
+    } 
+    
+    h5 { 
+        font-size: 0.8rem; 
+        font-weight: 500; 
+        color: black; 
+
+        i { 
+            padding: 0 7px;
+        }
+        } 
+    }
+}
+
+.related-posts h3{ 
+    font-size: 1.5rem;
+} 
+
+.related-posts__gallery p { 
+    font-family: variables.$heading-font; 
+    font-weight: 500; 
+    font-size: 0.7rem;
+    text-transform: uppercase;
+} 
+
+.comment-section { 
+    h3{ 
+        font-size: 1.6rem; 
+    } 
+
+    .comment {  
+        .comment__name { 
+            font-size: 0.7rem;
+            font-family: variables.$heading-font;
+            font-weight: 500;
+        } 
+        .comment__content { 
+            font-size: 0.7rem; 
+            font-weight: 500;
+            color: variables.$grey;
+        }
+        .comment__date { 
+            font-size: 0.55rem;
+            font-weight: 600;
+            color: variables.$grey;
+        }   
+        button { 
+            font-size: 0.6rem; 
+            font-style: italic;
+            text-transform: capitalize; 
+            font-weight: 400; 
+            color: darkgreen; 
+            &:hover { 
+                color: black; 
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.comment-form { 
+    h3 { 
+        font-size: 1.6rem;
+    }  
+
+    input::placeholder, 
+    textarea::placeholder { 
+        color: variables.$grey;
+        font-weight: 500; 
+        font-size: 0.8rem; 
+        font-family: variables.$body-font;
+    } 
+    
+    input { 
+        font-size: 0.8rem; 
+        font-weight: 600; 
+        color: variables.$black;
+    }  
+
+    .submit { 
+        font-family: variables.$heading-font; 
+        text-transform: uppercase; 
+        text-align: center; 
+        width: 160px;
+    }
+}
+
+/* CONTACT PAGE */
+
+.contact-banner h2 { 
+    font-size: 2.2rem;
+    width: 200px;
+} 
+
+.contact-details { 
+    p { 
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: variables.$grey;
+        max-width: 535px;
+        line-height: 1.6em;
+    }  
+
+    .contact-container {  
+        h4 { 
+            font-size: 0.75rem; 
+            letter-spacing: 0.3rem;
+        } 
+        i { 
+            font-size: 2rem;
+        } 
+
+        p { 
+            font-size: 0.65rem; 
+            line-height: 1.8em; 
+            font-weight: 500;
+        }
+    }
+} 
+
+.contact-form {
+    h3 {
+        font-size: 1rem; 
+        letter-spacing: 0.3px;
+    } 
+
+    p { 
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: variables.$grey;
+        line-height: 1.6em;
+    } 
+    .submit { 
+        font-family: variables.$heading-font;
+        text-transform: uppercase;
+        text-align: center; 
+        font-weight: 600; 
+        font-size: 0.8rem;
+    } 
+
+
 }
