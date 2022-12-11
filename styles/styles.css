@@ -1408,7 +1408,8 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .comment-form form input {
+  .comment-form form input,
+.comment-form form textarea {
     text-align: center;
   }
   .comment-form .submit {
@@ -1416,6 +1417,9 @@ footer p {
     margin-bottom: 30px;
   }
   /* CONTACT PAGE */
+  .contact-details {
+    text-align: center;
+  }
   .contact-details .contact-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1441,6 +1445,7 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
   .contact-form input {
     margin: 10px 40px;
@@ -1448,6 +1453,9 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contact-form textarea {
+    text-align: center;
   }
   .contact-form .submit {
     display: block;

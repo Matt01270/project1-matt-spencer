@@ -242,7 +242,8 @@
        form {  
         align-items: center; 
 
-            input { 
+            input, 
+            textarea { 
                 text-align: center;
             }
         } 
@@ -255,7 +256,7 @@
 
     /* CONTACT PAGE */ 
     .contact-details { 
-
+        text-align: center;
         .contact-container {
             flex-direction: column;
             align-items: center; 
@@ -275,12 +276,17 @@
     .contact-form {  
         display: flex; 
         flex-direction: column; 
+        text-align: center;
           
         input { 
             margin: 10px 40px; 
             text-align: center; 
             align-items: center;
         } 
+
+        textarea { 
+            text-align: center;
+        }
 
         .submit { 
             display: block;
